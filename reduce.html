@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <!-- <p>Subtract the numbers in the array, starting from the left:</p> -->
+
+<p id="demo"></p>
+
+  <script>
+const numbers = [1000,500];
+document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+function myFunc(total, num) {
+  return total - num;
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>range overflow in javascript</title>
+</head>
+<body>
+	<label>Enter the number</label>
+	<input id="id1" type="number" name="number" max="100">
+	<button onclick="myfunction()">ok</button>
+	<!-- <p>if Numbe ris greater than 100()</p> -->
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function myfunction() {
+		     let text;
+		     if (document.getElementById("id1").validity.rangeOverflow) {
+		     	text="value too large";
+		     }
+		     else if (document.getElementById("id1").value<=100&&document.getElementById("id1").value>=1) {
+		     	text="input  ok";
+		     }
+		     else{
+		     	text="input not ok"
+		     }
+		     document.getElementById("demo").innerHTML=text;
+		}
+	</script>
+</body>
+</html>

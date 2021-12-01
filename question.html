@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>java script loop questions</title>
+
+	<script type="text/javascript">
+
+
+
+		let a=[2,3,4,5,6,7];
+		
+		for (let i = 0; i < a.length; i++)
+		   {
+			 flag=true;
+            
+            	if (a[i]==1) 
+            	{
+            		flag=false
+            	}
+            	
+            else 
+            { 
+            	for(let j=2; j<= a[i] ; j++)
+            	{
+            		if(a[i]%j==0)
+            		{
+           
+                  flag=false
+                  break;
+            	
+                }
+            }
+        }
+                if(flag==true)
+                {
+                	document.write(a[i]+"prime")
+                	document.write("<br>")
+                }
+                else
+                {
+                	document.write(a[i]+"not prime")
+                	document.write("<br>")
+                }
+                } 
+            
+
+ 
+
+   
+
+
+var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var mf = 1;
+var m = 0;
+var item;
+for (var i=0; i<arr1.length; i++)
+{
+        for (var j=i; j<arr1.length; j++)
+        {
+                if (arr1[i] == arr1[j])
+                 m++;
+                if (mf<m)
+                {
+                  mf=m; 
+                  item = arr1[i];
+                }
+        }
+        m=0;
+}
+document.write(item+" ( " +mf +" times ) ") ;
+
+
+var text='Hello mayoogha';
+console.log("before swapping "=text);
+function swp(letters)
+{
+	
+		var newLetters="";
+		for(var i=0;i<letters.length;i++){
+			if(letters[i]===letters[i].toLowerCase()){
+				newLetters += Letters[i]toUpperCase();
+			}else{
+				newLetters += letters[i].toLowerCase();
+			}
+		}
+		console.log(newLetters);
+	
+	swp(text);
+}
+
+
+// function sum_sq(array) {
+//   var sum = 0, 
+//       i = array.length;
+//   while (i--) 
+//    sum += Math.pow(array[i], 2);
+//   return sum;
+// }
+ 
+// console.log(sum_sq([0,1,2,3,4])); 
+
+
+// function clic(){
+// 	document.write("hello world");
+//       }
+
+ </script>
+
+</head>
+<body>
+      <!-- <button onclick="clic()">click</button> -->
+</body>
+</html>

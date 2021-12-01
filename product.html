@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product discount</title>
+</head>
+    <body>
+        
+        <form>
+            <table>
+                <tr>
+                    <td>Product Name</td>
+                    <td><input type="text" name="name" id="name" required> </td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td><input type="number" name="price" id="price" required></td>
+                </tr>
+                <tr>
+                    <td>Season</td>
+                    <td>
+                        <select name="season" id="season">
+                        	<option>--selection--</option>>
+                        <option value="summer">SUMMER SALE</option>
+                        <option value="newyear">NEW YEAR SALE</option>
+                        <option value="clearance">CLEARANCE SALE</option>
+                        </select>
+                    </td>
+                </tr>
+            </table><br>
+            <input type="submit" id="submit" name="submit" value="DISCOUNT PRICE" onclick="discount()">
+             
+        </form>
+        <p id="discount"></p>
+        <p id="result"></p>
+        <script>
+            function discount(){
+                var p=document.getElementById("price").value
+                console.log(p)
+                var s=document.getElementById("season").value
+                var d=0;
+                if(s=="summer"){
+                    document.getElementById("discount").innerHTML="The discount is 10%"
+                    d=(p-(p*0.1))
+                }
+                 if(s=="newyear")
+                {
+                    document.getElementById("discount").innerHTML="The discount is 5%"
+                    d=(p-(p*0.05))
+                }
+                if(s=="clearance")
+                {
+                    document.getElementById("discount").innerHTML="The discount is 15%"
+                    d=(p-(p*0.15))
+                }
+                document.getElementById("result").innerHTML="The discounted price : Rs "+d
+            }
+        </script>
+    </body>
+</html>

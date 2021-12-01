@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>amstrong number</title>
+	<link rel="stylesheet" type="text/css" href="amstrongnumber.css">
+</head>
+<body>
+
+	<script>
+function armstr()
+{
+var arm=0,a,b,c,d,num;
+num=Number(document.getElementById("no_input").value);
+
+temp=num;
+while(temp>0)
+{
+a=temp%10;
+temp=parseInt(temp/10); 
+arm=arm+a*a*a;
+}
+if(arm==num)
+{
+alert("Armstrong number");
+}
+else
+{
+alert("Not Armstrong number");
+}
+}
+</script>
+</head>
+<body>
+	<center>
+		<div id="div1" class="row">
+			 <div class="col-sm-4">
+			</div></div>
+<h3>Enter any Number: </h3>
+<input id="no_input" type="number"></br></br>
+<button  id="btn1"onclick="armstr()">Check</button></br></br>
+</center>
+</body>
+</html>

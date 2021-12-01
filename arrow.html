@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>using arrow function</title>
+</head>
+<body>
+	<p id="p1">hello</p>
+	<p id="p2">hi</p>
+	<p id="p3">hi</p>
+	<p id="p4">hi</p>
+	<script type="text/javascript">
+		var hello;
+		hello =function() {
+			return "hello world"
+		}
+        document.getElementById("p1").innerHTML=hello()	;
+
+
+        let x=function(x,y){
+        	return x*y;
+        }
+        document.getElementById("p2").innerHTML=x(2,4)
+
+
+
+        let h=()=>{
+        	return "hello hii"
+        }
+        document.getElementById("p3").innerHTML=h()
+
+        let y=(x,y)=>x*y;
+
+         document.getElementById("p4").innerHTML=y(4,3)
+	</script>
+
+</body>
+</html>

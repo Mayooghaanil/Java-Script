@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculater javascript</title>
+</head>
+<script type="text/javascript">
+	function add()
+	{
+		var a=prompt("calcu.firstnum.value")
+		var b=prompt("calcu.secondnum.value")
+		c=parseInt(a)+parseInt(b);
+		alert(c)
+	}
+    function sub()
+    {
+        var a=prompt("calcu.firstnum.value")
+        var b=prompt("calcu.secondnum.value")
+        c=parseInt(a)-parseInt(b);
+        alert(c)
+    }
+    function mult()
+    {
+        var a=prompt("calcu.firstnum.value")
+        var b=prompt("calcu.secondnum.value")
+        c=parseInt(a)*parseInt(b);
+        alert(c)
+    }
+    function div()
+    {
+        var a=prompt("calcu.firstnum.value")
+        var b=prompt("calcu.secondnum.value")
+        c=parseInt(a)%parseInt(b);
+        alert(c)
+    }
+</script>
+<body>
+	<!-- <form name="calcu">
+    <label>Enter first number</label>
+    <input type="number" name="firstnum" value="number1"><br><br>
+    <label>Enter second number</label>
+    <input type="number" name="secondnum" value="number2"><br><br>
+    <button onclick=add()>+</button>
+    <button>-</button>
+    <button>*</button>
+    <button>%</button><br><br>
+    <label>Product is</label>
+    <input type="number" name="product"> -->
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mult()">multiply</button>
+    <button onclick="div()">division</button>
+</form>
+</body>
+</html>
